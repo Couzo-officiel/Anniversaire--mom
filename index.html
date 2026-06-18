@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Anniversaire Maman</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #message {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff4081;
+            margin-top: 20px;
+        }
+        .btn-surprise {
+            color: #007bff;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#" id="boutonSurprise" class="btn-surprise">Clique ici pour une surprise</a>
+
+    <div id="message"></div>
+
+    <script>
+        // Sélection des éléments HTML
+        const bouton = document.getElementById('boutonSurprise');
+        const messageDiv = document.getElementById('message');
+
+        // Ajout de l'événement au clic
+        bouton.addEventListener('click', function(event) {
+            event.preventDefault(); // Empêche le lien de recharger la page
+            messageDiv.textContent = '🎉 Happy Birthday Mom ! ❤️';
+        });
+    </script>
+
+</body>
+</html>
